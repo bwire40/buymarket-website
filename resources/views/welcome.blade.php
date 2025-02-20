@@ -67,6 +67,7 @@
   </style>
   <!-- Scripts -->
   @vite(['resources/css/app.css', 'resources/js/app.js'])
+  @vite(['resources/css/carousel.css', 'resources/js/carousel.js'])
 </head>
 
 <body class="bg-accent text-gray-600 work-sans leading-normal text-base tracking-normal">
