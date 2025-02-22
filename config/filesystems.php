@@ -32,7 +32,7 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => 'C:\Users\Emmanuel\Desktop\project-backups',
+            'root' => 'C:\Users\Emmanuel Bwire\Desktop\project_backups',
             'serve' => true,
             'throw' => false,
             'report' => false,
