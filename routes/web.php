@@ -1,10 +1,33 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+
+// customer pages
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/', 'index')->name('home');
+    Route::get('/shop', 'shop')->name('shop');
+    Route::get('/about', 'about')->name('about');
+    Route::get('/contact', 'contact')->name('contact');
+    Route::get('/become-seller', 'become_seller')->name('become-seller');
+});
+
+
+// shop routes
+
+Route::middleware('auth')->group(function () {
+    Route::controller(ProductController::class)->group(function () {
+        Route::get('/cart', 'cart')->name('cart');
+    });
+});
+
+
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

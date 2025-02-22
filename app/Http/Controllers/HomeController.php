@@ -33,4 +33,21 @@ class HomeController extends Controller
 
         return view('welcome', compact('home_data'));
     }
+
+    public function shop()
+    {
+        return view('customers.shop');
+    }
+    public function contact()
+    {
+        return view('customers.contact');
+    }
+    public function about()
+    {
+        return view('customers.about');
+    }
+    public function become_seller()
+    {
+        return view('customers.become-seller');
+    }
 }

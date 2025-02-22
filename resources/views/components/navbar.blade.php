@@ -23,19 +23,23 @@
     <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
       <nav>
         <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-          <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Shop</a>
+          <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+              href="{{ route('shop') }}">Shop</a>
           </li>
-          <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">About</a>
+          <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+              href="{{ route('about') }}">About</a>
           </li>
 
-          <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Contact</a>
+          <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+              href="{{ route('contact') }}">Contact</a>
           </li>
-          <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Become a
+          <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+              href="{{ route('become-seller') }}">Become a
               Seller</a>
           </li>
 
           <li>
-            <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">
+            <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('cart') }}">
               <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
                 height="24" viewBox="0 0 24 24">
                 <path
