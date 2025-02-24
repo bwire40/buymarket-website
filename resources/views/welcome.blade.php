@@ -9,7 +9,6 @@
   @include('components.best-seller')
   {{-- categories --}}
   @include('components.product-categories')
-  {{-- banners --}}
-  @include('components.banner')
+
   @include('components.faqs')
 @endsection
