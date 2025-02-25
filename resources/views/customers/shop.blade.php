@@ -5,5 +5,4 @@
 {{-- content --}}
 @section('content')
   @include('components.products')
-  @include('components.banner')
 @endsection

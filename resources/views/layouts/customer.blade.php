@@ -24,6 +24,8 @@
   {{-- main content --}}
   <main>
     @yield('content')
+    {{-- banners --}}
+    @include('components.banner')
   </main>
   {{-- footer --}}
   <footer>
