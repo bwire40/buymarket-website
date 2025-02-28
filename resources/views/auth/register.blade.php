@@ -67,6 +67,9 @@
               checked />
             <label class="inline-block" for="remember-me"> I agree to the <a class="underline" href="#">Terms and
                 Conditions</a></label>
+            <p class="py-3">Already have an account? <a href="{{ route("login") }}"
+                class="text-slate-800 underline">Sign
+                In</a></p>
           </div>
           <button type="submit"
             class="mt-6 rounded-lg bg-primary px-4 py-2 text-center text-secondary text-base font-semibold shadow-md outline-none ring-slate-500 ring-offset-2 transition hover:bg-slate-700 hover:text-primary focus:ring-2 md:w-32">Sign
