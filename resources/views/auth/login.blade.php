@@ -37,6 +37,15 @@
             class="w-full rounded-lg bg-primary px-4 py-2 text-center text-base font-semibold text-black shadow-md ring-gray-500 ring-offset-2 transition focus:ring-2">Log
             in</button>
         </form>
+        <!-- Remember Me -->
+        <div class="block mt-4">
+          <label for="remember_me" class="inline-flex items-center">
+            <input id="remember_me" type="checkbox"
+              class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800"
+              name="remember">
+            <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __("Remember me") }}</span>
+          </label>
+        </div>
         <div class="py-12 text-center">
           <p class="whitespace-nowrap text-gray-600">
             Don't have an account?

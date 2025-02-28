@@ -47,13 +47,14 @@ class RegisteredUserController extends Controller
         $user->roles()->attach($role);
 
         event(new Registered($user));
-
         Auth::login($user);
 
-        if ($user->hasRole('super-admin') && $user->hasRole('admin') && $user->hasRole('staff') && $user->hasRole('seller')) {
-            return redirect(route('dashboard', absolute: false));
-        }
+        dd($user->roles());
 
-        return redirect(route('home', absolute: false));
+        if (!$user->hasRole('customer')) {
+            return redirect()->route('dashboard');
+        } else {
+            return redirect()->route('home');
+        }
     }
 }
