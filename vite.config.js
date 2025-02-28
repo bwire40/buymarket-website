@@ -8,12 +8,4 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    css: {
-        postcss: {
-            plugins: [
-                require("tailwindcss"), // Make sure Tailwind is processed
-                require("autoprefixer"), // Autoprefixer for cross-browser support
-            ],
-        },
-    },
 });
