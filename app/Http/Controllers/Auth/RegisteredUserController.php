@@ -49,12 +49,14 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
         Auth::login($user);
 
-        dd($user->roles());
+        // $user = User::with('roles')->find($user->id);
+        // dd($user->roles);
 
-        if (!$user->hasRole('customer')) {
-            return redirect()->route('dashboard');
-        } else {
+
+        if ($user->roles->contains('name', 'customer')) {
             return redirect()->route('home');
+        } else {
+            return redirect()->route('dashboard');
         }
     }
 }

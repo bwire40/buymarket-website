@@ -30,7 +30,7 @@ class CheckRole
         }
 
         // If the user doesn't have any of the roles, redirect or abort with a 403
-        return abort(403, 'Unauthorized action.');
+        return redirect()->route('home');
         // return $next($request);
     }
 }
