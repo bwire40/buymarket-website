@@ -69,6 +69,9 @@ return [
             'transport' => 'sendmail',
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
         ],
+        "mailgun" => [
+            'transport' => 'mailgun',
+        ],
 
         'log' => [
             'transport' => 'log',
@@ -95,9 +98,6 @@ return [
             ],
         ],
 
-    ],
-    "mailgun" => [
-        'transport' => 'mailgun',
     ],
 
     /*
