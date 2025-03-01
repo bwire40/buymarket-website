@@ -19,7 +19,7 @@ Route::controller(HomeController::class)->group(function () {
 
 // shop routes
 
-Route::middleware('auth')->group(function () {
+Route::middleware('auth', 'verified')->group(function () {
     Route::controller(ProductController::class)->group(function () {
         Route::get('/cart', 'cart')->name('cart');
     });
